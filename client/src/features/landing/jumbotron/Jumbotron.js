@@ -16,7 +16,7 @@ const StyledJumbotron = styled.div`
 
 const Jumbotron = () => {
   return (
-    <StyledJumbotron className="jumbotron">
+    <StyledJumbotron className="jumbotron jumbotron-fluid">
       <div className="container">
         <h1 className="display-4">Welcome!</h1>
         <p className="lead">
