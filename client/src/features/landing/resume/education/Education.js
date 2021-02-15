@@ -5,7 +5,7 @@ const StyledCard = styled.div``;
 
 const Education = () => {
   return (
-    <>
+    <div className="container">
       <div className="row">
         <h1>Education</h1>
       </div>
@@ -39,7 +39,7 @@ const Education = () => {
           </div>
         </StyledCard>
       </div>
-    </>
+    </div>
   );
 };
 
