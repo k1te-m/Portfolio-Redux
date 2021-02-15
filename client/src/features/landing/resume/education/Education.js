@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+const EducationSection = styled.div`
+  width: 75%;
+`;
 const StyledCard = styled.div``;
 
 const Education = () => {
   return (
-    <div className="container">
+    <EducationSection className="container">
       <div className="row">
         <h1>Education</h1>
       </div>
@@ -39,7 +42,7 @@ const Education = () => {
           </div>
         </StyledCard>
       </div>
-    </div>
+    </EducationSection>
   );
 };
 

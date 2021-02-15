@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+const SkillsSection = styled.div`
+  width: 75%;
+`;
+
 const Skills = () => {
   return (
-    <div className="container">
+    <SkillsSection className="container">
       <div className="row">
         <h1>Skills</h1>
       </div>
@@ -26,7 +30,7 @@ const Skills = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </SkillsSection>
   );
 };
 

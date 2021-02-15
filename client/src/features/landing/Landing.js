@@ -15,6 +15,10 @@ import WorkHistory from "./resume/workhistory/WorkHistory";
 
 const FooterStyled = styled.footer``;
 
+const PortfolioSection = styled.div`
+  background-color: gainsboro;
+`;
+
 const Landing = () => {
   const isPortfolioLoading = useSelector(selectPortfolioLoading);
   const dispatch = useDispatch();
@@ -44,18 +48,22 @@ const Landing = () => {
           </div>
         </div>
         <div className="container">
-          <div className="row" ref={portfolioBegin}>
+          <PortfolioSection className="row" ref={portfolioBegin}>
             <Portfolio />
-          </div>
+          </PortfolioSection>
+          <hr />
           <div className="row" ref={contactBegin}>
             <Contact />
           </div>
+          <hr />
           <div className="row" ref={educationBegin}>
             <Education />
           </div>
+          <hr />
           <div className="row" ref={skillsBegin}>
             <Skills />
           </div>
+          <hr />
           <div className="row" ref={experienceBegin}>
             <WorkHistory />
           </div>

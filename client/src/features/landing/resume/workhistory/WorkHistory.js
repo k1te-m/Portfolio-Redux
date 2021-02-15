@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+const WorkHistorySection = styled.div`
+  width: 75%;
+`;
+
 const WorkHistory = () => {
   return (
-    <div className="container">
+    <WorkHistorySection className="container">
       <div className="row">
         <h1>Experience</h1>
       </div>
@@ -91,7 +95,7 @@ const WorkHistory = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </WorkHistorySection>
   );
 };
 

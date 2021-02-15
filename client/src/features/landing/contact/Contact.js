@@ -28,6 +28,13 @@ const ImgContainer = styled.div`
   }
 `;
 
+const ContactSection = styled.div`
+  text-align: center;
+  .form-group {
+    text-align: left;
+  }
+`;
+
 const Contact = () => {
   const modal = useSelector(selectModal);
   const dispatch = useDispatch();
@@ -75,7 +82,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container">
+      <ContactSection className="container">
         <div className="row">
           <div className="col">
             <h5>Contact</h5>
@@ -119,7 +126,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
+      </ContactSection>
       <Modal isOpen={modal} handleClose={() => dispatch(TOGGLE_MODAL())}>
         <div className="container">
           <div className="row">

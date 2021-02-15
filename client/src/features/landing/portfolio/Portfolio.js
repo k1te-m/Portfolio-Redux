@@ -3,7 +3,9 @@ import { useSelector } from "react-redux";
 import { selectPortfolio } from "../portfolio/portfolioSlice";
 import styled from "styled-components";
 
-const PortfolioContainer = styled.div``;
+const PortfolioContainer = styled.div`
+  text-align: center;
+`;
 
 const StyledList = styled.ul`
   display: inline;
@@ -42,7 +44,7 @@ const Portfolio = () => {
   const portfolio = useSelector(selectPortfolio);
 
   return (
-    <div className="container">
+    <PortfolioContainer className="container">
       <h3>Portfolio</h3>
       {portfolio.map((repo) => (
         <div className="row mb-3">
@@ -70,7 +72,7 @@ const Portfolio = () => {
           </div>
         </div>
       ))}
-    </div>
+    </PortfolioContainer>
   );
 };
 
