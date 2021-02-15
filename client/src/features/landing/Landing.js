@@ -8,6 +8,7 @@ import {
   selectPortfolioLoading,
   loadRepos,
 } from "../landing/portfolio/portfolioSlice";
+import Contact from "./contact/Contact";
 
 const Landing = () => {
   const isPortfolioLoading = useSelector(selectPortfolioLoading);
@@ -21,14 +22,21 @@ const Landing = () => {
     return <Loading />;
   } else {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <Jumbotron />
+      <>
+        <div className="container-fluid">
+          <div className="row">
+            <Jumbotron />
+          </div>
         </div>
         <div className="container">
-          <Portfolio />
+          <div className="row">
+            <Portfolio />
+          </div>
+          <div className="row">
+            <Contact />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 };
