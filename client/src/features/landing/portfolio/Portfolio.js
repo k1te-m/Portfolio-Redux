@@ -42,7 +42,7 @@ const Portfolio = () => {
   const portfolio = useSelector(selectPortfolio);
 
   return (
-    <>
+    <div className="container">
       <h3>Portfolio</h3>
       {portfolio.map((repo) => (
         <div className="row mb-3">
@@ -70,7 +70,7 @@ const Portfolio = () => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
