@@ -9,6 +9,7 @@ import {
   loadRepos,
 } from "../landing/portfolio/portfolioSlice";
 import Contact from "./contact/Contact";
+import Resume from "./resume/Resume";
 
 const Landing = () => {
   const isPortfolioLoading = useSelector(selectPortfolioLoading);
@@ -34,6 +35,9 @@ const Landing = () => {
           </div>
           <div className="row">
             <Contact />
+          </div>
+          <div className="row">
+            <Resume />
           </div>
         </div>
       </>
