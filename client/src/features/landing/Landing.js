@@ -22,17 +22,21 @@ const Landing = () => {
     return <Loading />;
   } else {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <Jumbotron />
+      <>
+        <div className="container-fluid">
+          <div className="row">
+            <Jumbotron />
+          </div>
         </div>
-        <div className="row">
-          <Portfolio />
+        <div className="container">
+          <div className="row">
+            <Portfolio />
+          </div>
+          <div className="row">
+            <Contact />
+          </div>
         </div>
-        <div className="row">
-          <Contact />
-        </div>
-      </div>
+      </>
     );
   }
 };
