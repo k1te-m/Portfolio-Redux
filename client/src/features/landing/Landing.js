@@ -55,7 +55,7 @@ const Landing = () => {
             <Skills />
           </div>
           <hr />
-          <div className="row" id="workHistory">
+          <div className="row" id="experience">
             <WorkHistory />
           </div>
           <div className="row">
