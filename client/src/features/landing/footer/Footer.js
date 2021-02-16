@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { HashLink } from "react-router-hash-link";
 
 const FooterStyled = styled.footer``;
 
-const Footer = ({ scrollToPortfolio }) => {
+const Footer = () => {
   return (
     <FooterStyled className="footer font-small">
       <div className="container text-center">
@@ -14,21 +15,21 @@ const Footer = ({ scrollToPortfolio }) => {
         <div className="row">
           <div className="col">
             <div className="row">
-              <a onClick={scrollToPortfolio}>Portfolio</a>
+              <HashLink to="/#portfolio">Portfolio</HashLink>
             </div>
             <div className="row">
-              <a>Contact</a>
+              <HashLink to="/#contact">Contact</HashLink>
             </div>
             <div className="row">
-              <a>Education</a>
+              <HashLink to="/#education">Education</HashLink>
             </div>
             <div className="row">
-              <a>Skills</a>
+              <HashLink to="/#skills">Skills</HashLink>
             </div>
           </div>
           <div className="col">
             <div className="row">
-              <a>Experience</a>
+              <HashLink to="/#experience">Experience</HashLink>
             </div>
             <div className="row">
               <a
