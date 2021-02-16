@@ -88,7 +88,7 @@ const Contact = () => {
             <h5>Contact</h5>
             <form>
               <div className="form-group">
-                <label for={name}>Name</label>
+                <label htmlFor={name}>Name</label>
                 <input
                   className="form-control"
                   onChange={handleInputChange}
@@ -98,7 +98,7 @@ const Contact = () => {
                 />
               </div>
               <div className="form-group">
-                <label for={email}>Email</label>
+                <label htmlFor={email}>Email</label>
                 <input
                   className="form-control"
                   onChange={handleInputChange}
@@ -108,7 +108,7 @@ const Contact = () => {
                 />
               </div>
               <div className="form-group">
-                <label for={message}>Message</label>
+                <label htmlFor={message}>Message</label>
                 <textarea
                   className="form-control"
                   onChange={handleInputChange}
@@ -136,7 +136,7 @@ const Contact = () => {
                 <h3>Your message has been received. 😀</h3>
               </div>
             </div>
-            <div className="col">
+            <div className="col-5">
               <ImgContainer>
                 <img src="../images/cooper1.jpg" alt="Cooper" />
               </ImgContainer>
