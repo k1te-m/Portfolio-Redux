@@ -9,7 +9,9 @@ const FooterWrapper = styled.div`
   text-align: center;
 `;
 
-const FooterStyled = styled.footer``;
+const FooterStyled = styled.footer`
+  width: 100vw;
+`;
 
 const Footer = () => {
   return (

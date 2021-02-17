@@ -2,7 +2,24 @@ import React from "react";
 import styled from "styled-components";
 
 const WorkHistorySection = styled.div`
-  width: 75%;
+  width: 90%;
+  text-align: center;
+  h1 {
+    color: #f2f2f2;
+    text-align: left;
+  }
+  .card {
+    background-color: #65ccb8;
+  }
+  li {
+    background-color: #65ccb8;
+  }
+  h4 {
+    color: #f2f2f2;
+  }
+  h5 {
+    color: #f2f2f2;
+  }
 `;
 
 const WorkHistory = () => {
@@ -13,7 +30,8 @@ const WorkHistory = () => {
       </div>
 
       <div className="row">
-        <h5>Northern Trust Corporation</h5>
+        <h4>Northern Trust Corporation</h4>
+        <h5>Chicago, IL</h5>
       </div>
       <div className="row">
         <div className="card mb-1">

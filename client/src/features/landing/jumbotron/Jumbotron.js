@@ -4,16 +4,17 @@ import Nav from "../nav/Nav";
 import SideNav from "../sideNav/SideNav";
 
 const StyledJumbotron = styled.div`
-  background-image: url("../images/chicago.jpg");
+  background-image: url("../images/skyline.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center right;
+  background-position: center top;
   width: 100%;
-  height: 350px;
+  height: 300px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  border-bottom: 3px solid #57ba98;
 `;
 
 const NavContainer = styled.div`

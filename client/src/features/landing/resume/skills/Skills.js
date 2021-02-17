@@ -2,7 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 const SkillsSection = styled.div`
-  width: 75%;
+  width: 90%;
+  text-align: center;
+  h1 {
+    text-align: left;
+    color: #f2f2f2;
+  }
+  .card {
+    background-color: #57ba98;
+  }
+  li {
+    background-color: #57ba98;
+  }
 `;
 
 const Skills = () => {

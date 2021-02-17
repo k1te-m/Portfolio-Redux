@@ -2,7 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const EducationSection = styled.div`
-  width: 75%;
+  width: 90%;
+  text-align: center;
+  h1 {
+    text-align: left;
+    color: #f2f2f2;
+  }
+  .card {
+    background-color: #3b945e;
+  }
 `;
 const StyledCard = styled.div``;
 

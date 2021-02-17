@@ -45,12 +45,11 @@ const Portfolio = () => {
 
   return (
     <PortfolioContainer className="container">
-      <h3>Portfolio</h3>
       {portfolio.map((repo) => (
         <div className="row mb-3">
           <div className="col-md-6">
             <a href={`https://www.github.com/${repo.github}/${repo.name}`}>
-              <img src="https://via.placeholder.com/150" />
+              <img src="https://via.placeholder.com/350" />
             </a>
           </div>
           <div className="col-md-6">

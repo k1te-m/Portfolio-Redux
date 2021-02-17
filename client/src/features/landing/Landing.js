@@ -14,11 +14,25 @@ import Skills from "./resume/skills/Skills";
 import WorkHistory from "./resume/workhistory/WorkHistory";
 import Footer from "./footer/Footer";
 
+const MainContainer = styled.div`
+  hr {
+    color: #65ccb8;
+  }
+`;
+
 const FooterStyled = styled.footer``;
 
 const PortfolioSection = styled.div`
-  background-color: gainsboro;
+  background-color: #f2f2f2;
 `;
+
+const ContactSection = styled.div``;
+
+const EducationSection = styled.div``;
+
+const SkillsSection = styled.div``;
+
+const WorkHistorySection = styled.div``;
 
 const Landing = () => {
   const isPortfolioLoading = useSelector(selectPortfolioLoading);
@@ -38,30 +52,30 @@ const Landing = () => {
             <Jumbotron />
           </div>
         </div>
-        <div className="container">
-          <PortfolioSection className="row" id="portfolio">
+        <MainContainer className="container">
+          <PortfolioSection className="row pt-3" id="portfolio">
             <Portfolio />
           </PortfolioSection>
           <hr />
-          <div className="row" id="contact">
+          <ContactSection className="row" id="contact">
             <Contact />
-          </div>
+          </ContactSection>
           <hr />
-          <div className="row" id="education">
+          <EducationSection className="row" id="education">
             <Education />
-          </div>
+          </EducationSection>
           <hr />
-          <div className="row" id="skills">
+          <SkillsSection className="row" id="skills">
             <Skills />
-          </div>
+          </SkillsSection>
           <hr />
-          <div className="row" id="experience">
+          <WorkHistorySection className="row" id="experience">
             <WorkHistory />
-          </div>
+          </WorkHistorySection>
           <div className="row">
             <Footer />
           </div>
-        </div>
+        </MainContainer>
       </>
     );
   }

@@ -29,9 +29,20 @@ const ImgContainer = styled.div`
 `;
 
 const ContactSection = styled.div`
+  width: 90%;
   text-align: center;
   .form-group {
     text-align: left;
+  }
+  h1 {
+    color: #f2f2f2;
+    text-align: left;
+  }
+  input {
+    background-color: #f2f2f2;
+  }
+  textarea {
+    background-color: #f2f2f2;
   }
 `;
 
@@ -85,7 +96,7 @@ const Contact = () => {
       <ContactSection className="container">
         <div className="row">
           <div className="col">
-            <h5>Contact</h5>
+            <h1>Contact</h1>
             <form>
               <div className="form-group">
                 <label htmlFor={name}>Name</label>
