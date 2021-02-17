@@ -6,13 +6,31 @@ mongoose.connect(process.env.MONGODB_URI || config.get("MONGODB_URI"));
 
 const repoSeed = [
   {
+    name: "Chat-Application",
+    github: "k1te-m",
+    deployedLink: "https://calm-springs-46357.herokuapp.com/",
+    imageURL: "../images/explorer.PNG",
+    description:
+      "A MERN stack application that allows real time communication between users, utilizing Socket.io, React-Redux, and ReduxToolkit.",
+    languages: [
+      "ReactJS",
+      "Redux",
+      "ReduxToolkit",
+      "MongoDB",
+      "Socket.io",
+      "Express",
+      "NodeJS",
+      "Bootstrap",
+    ],
+  },
+  {
     name: "explorer",
     github: "k1te-m",
     deployedLink: "https://gentle-atoll-92825.herokuapp.com/",
     imageURL: "../images/explorer.PNG",
     description:
       "MERN stack web game that is designed to take the user on an educational journey while interacting with NASA information to gain explorative knowledge. Gain credits as rewards for answering correct quiz questions while transversing the universe. Purchase and upgrade ships throught your journey.",
-    languages: ["React.js", "MongoDB", "Express", "Node.js", "Bootstrap"],
+    languages: ["ReactJS", "MongoDB", "Express", "NodeJS", "Bootstrap"],
   },
   {
     name: "EcommerceApp",
@@ -26,7 +44,7 @@ const repoSeed = [
       "Handlebars",
       "MySQL",
       "Express",
-      "Node.js",
+      "NodeJS",
       "Bootstrap",
     ],
   },
@@ -37,49 +55,8 @@ const repoSeed = [
     imageURL: "../images/googlebooks.png",
     description:
       "React application utilizing NodeJS, Express, and MongoDB that allows users to query and display books from the Google Books API. Users are given various information about each book and are able to save books that they like or want to read for future reference.",
-    languages: ["React.js", "MongoDB", "Express", "Bootstrap"],
+    languages: ["ReactJS", "MongoDB", "NodeJS", "Express", "Bootstrap"],
   },
-  //   {
-  //     name: "Employee-Directory",
-  //     github: "k1te-m",
-  //     deployedLink: "https://fierce-falls-06822.herokuapp.com/",
-  //     imageURL: "../images/employeedirect.PNG",
-  //     description:
-  //       "A React application that acts as an employee directory for employees or managers to be able to quickly view non-sensitive information about their colleagues.",
-  //     languages: ["React.js", "Express", "Node.js", "Bootstrap"],
-  //   },
-  // {
-  //     name: "Restaurant-Roulette",
-  //     github: "k1te-m",
-  //     imageURL: "../images/restroulette.PNG",
-  //     description: "An application that returns a random restaurant selection based on the user city location via Zomato's API.",
-  //     languages: ["React.js", "Express", "Node.js", "Foundation", ]
-  // },
-  {
-    name: "Budget-Tracker",
-    github: "k1te-m",
-    deployedLink: "https://thawing-crag-91029.herokuapp.com/",
-    imageURL: "../images/budget.PNG",
-    description:
-      "Created a PWA from provided front-end and back-end files for a budget tracking app.",
-    languages: ["PWA", "Service Worker"],
-  },
-  {
-    name: "Employee-Tracker",
-    github: "k1te-m",
-    deployedLink: "https://github.com/k1te-m/Employee-Tracker",
-    imageURL: "../images/employeetrack.PNG",
-    description:
-      "This application is intended to be used as a Content Management System for a fictional company. Allowing non-developers the ability to view and interact with information stored in our database.",
-    languages: ["CLI", "MySQL", "Node.js"],
-  },
-
-  // {
-  //     name: "React-Portfolio",
-  //     github: "k1te-m",
-  //     imageURL: "../images/portfolioex.PNG",
-  //     description: "A React application to display some quick information about myself along with my resume, LinkedIn profile, and GitHub repositories."
-  // },
 ];
 
 db.Repo.remove({})
