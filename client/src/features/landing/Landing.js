@@ -16,7 +16,7 @@ import Footer from "./footer/Footer";
 import About from "./about/About";
 import Hobbies from "./about/Hobbies";
 
-const MainContainer = styled.div`
+const AboutContainer = styled.div`
   hr {
     color: #65ccb8;
   }
@@ -54,7 +54,7 @@ const Landing = () => {
             <Jumbotron />
           </div>
         </div>
-        <MainContainer className="container">
+        <AboutContainer className="container">
           <div className="row pt-3">
             <About />
           </div>
@@ -80,7 +80,7 @@ const Landing = () => {
           <div className="row">
             <Footer />
           </div> */}
-        </MainContainer>
+        </AboutContainer>
 
         <Hobbies />
       </>
