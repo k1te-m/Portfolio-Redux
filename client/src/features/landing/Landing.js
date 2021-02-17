@@ -51,9 +51,7 @@ const Landing = () => {
           </div>
         </AboutContainer>
         <Hobbies />
-        <ProjectContainer className="container">
-          <h3>Projects</h3>
-        </ProjectContainer>
+        <Portfolio />
       </>
     );
   }
