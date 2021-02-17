@@ -9,7 +9,7 @@ const repoSeed = [
     name: "Chat-Application",
     github: "k1te-m",
     deployedLink: "https://calm-springs-46357.herokuapp.com/",
-    imageURL: "../images/explorer.PNG",
+    imageURL: "../images/chatApp.png",
     description:
       "A MERN stack application that allows real time communication between users, utilizing Socket.io, React-Redux, and ReduxToolkit.",
     languages: [
