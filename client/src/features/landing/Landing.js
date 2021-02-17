@@ -14,6 +14,7 @@ import Skills from "./resume/skills/Skills";
 import WorkHistory from "./resume/workhistory/WorkHistory";
 import Footer from "./footer/Footer";
 import About from "./about/About";
+import Hobbies from "./about/Hobbies";
 
 const MainContainer = styled.div`
   hr {
@@ -80,6 +81,8 @@ const Landing = () => {
             <Footer />
           </div> */}
         </MainContainer>
+
+        <Hobbies />
       </>
     );
   }
