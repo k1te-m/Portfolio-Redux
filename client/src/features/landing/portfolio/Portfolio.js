@@ -49,7 +49,7 @@ const Portfolio = () => {
         <div className="row mb-3">
           <div className="col-md-6">
             <a href={`https://www.github.com/${repo.github}/${repo.name}`}>
-              <img src="https://via.placeholder.com/350" />
+              <img src="https://via.placeholder.com/150" />
             </a>
           </div>
           <div className="col-md-6">
