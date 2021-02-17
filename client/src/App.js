@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from "./features/landing/Landing";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
+import styled from "styled-components";
 import "./App.css";
 
 function App() {
