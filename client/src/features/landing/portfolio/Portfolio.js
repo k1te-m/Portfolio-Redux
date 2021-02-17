@@ -5,6 +5,13 @@ import styled from "styled-components";
 
 const PortfolioContainer = styled.div`
   text-align: center;
+  h3 {
+    text-align: left;
+  }
+  img {
+    width: 205px;
+    height: 432px;
+  }
 `;
 
 const StyledList = styled.ul`
@@ -45,16 +52,14 @@ const Portfolio = () => {
 
   return (
     <PortfolioContainer className="container">
+      <div className="row mb-5">
+        <h3>Projects</h3>
+      </div>
       {portfolio.map((repo) => (
         <div className="row mb-3">
-          <div className="col-md-6">
-            <a href={`https://www.github.com/${repo.github}/${repo.name}`}>
-              <img src="https://via.placeholder.com/150" />
-            </a>
-          </div>
-          <div className="col-md-6">
+          <div className="col-md-6 my-auto">
             <div className="row">
-              <h3>{repo.name}</h3>
+              <h5>{repo.name}</h5>
             </div>
             <div className="row">
               <StyledList className="list-group">
@@ -67,6 +72,29 @@ const Portfolio = () => {
             </div>
             <div className="row">
               <span>{repo.description}</span>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="row mt-2">
+              <a>
+                <img src={repo.imageURL} />
+              </a>
+            </div>
+            <div className="row mt-1 w-50 m-auto">
+              <div className="col p-0">
+                <a href={repo.deployedLink} target="_blank" rel="noreferrer">
+                  <span>Visit</span>
+                </a>
+              </div>
+              <div className="col p-0">
+                <a
+                  href={`https://www.github.com/${repo.github}/${repo.name}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>GitHub</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
