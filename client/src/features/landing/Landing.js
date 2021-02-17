@@ -13,6 +13,7 @@ import Education from "./resume/education/Education";
 import Skills from "./resume/skills/Skills";
 import WorkHistory from "./resume/workhistory/WorkHistory";
 import Footer from "./footer/Footer";
+import About from "./about/About";
 
 const MainContainer = styled.div`
   hr {
@@ -53,7 +54,10 @@ const Landing = () => {
           </div>
         </div>
         <MainContainer className="container">
-          <PortfolioSection className="row pt-3" id="portfolio">
+          <div className="row pt-3">
+            <About />
+          </div>
+          {/* <PortfolioSection className="row" id="portfolio">
             <Portfolio />
           </PortfolioSection>
           <hr />
@@ -74,7 +78,7 @@ const Landing = () => {
           </WorkHistorySection>
           <div className="row">
             <Footer />
-          </div>
+          </div> */}
         </MainContainer>
       </>
     );
