@@ -20,21 +20,12 @@ const AboutContainer = styled.div`
   hr {
     color: #65ccb8;
   }
+  @media (min-width: 1200px) {
+    height: 80vh;
+  }
 `;
 
-const FooterStyled = styled.footer``;
-
-const PortfolioSection = styled.div`
-  background-color: #f2f2f2;
-`;
-
-const ContactSection = styled.div``;
-
-const EducationSection = styled.div``;
-
-const SkillsSection = styled.div``;
-
-const WorkHistorySection = styled.div``;
+const ProjectContainer = styled.div``;
 
 const Landing = () => {
   const isPortfolioLoading = useSelector(selectPortfolioLoading);
@@ -58,31 +49,11 @@ const Landing = () => {
           <div className="row pt-3">
             <About />
           </div>
-          {/* <PortfolioSection className="row" id="portfolio">
-            <Portfolio />
-          </PortfolioSection>
-          <hr />
-          <ContactSection className="row" id="contact">
-            <Contact />
-          </ContactSection>
-          <hr />
-          <EducationSection className="row" id="education">
-            <Education />
-          </EducationSection>
-          <hr />
-          <SkillsSection className="row" id="skills">
-            <Skills />
-          </SkillsSection>
-          <hr />
-          <WorkHistorySection className="row" id="experience">
-            <WorkHistory />
-          </WorkHistorySection>
-          <div className="row">
-            <Footer />
-          </div> */}
         </AboutContainer>
-
         <Hobbies />
+        <ProjectContainer className="container">
+          <h3>Projects</h3>
+        </ProjectContainer>
       </>
     );
   }
