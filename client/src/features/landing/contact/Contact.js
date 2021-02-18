@@ -29,20 +29,21 @@ const ImgContainer = styled.div`
 `;
 
 const ContactSection = styled.div`
-  width: 90%;
   text-align: center;
   .form-group {
     text-align: left;
   }
   h1 {
-    color: #f2f2f2;
     text-align: left;
   }
   input {
-    background-color: #f2f2f2;
+    background-color: white;
   }
   textarea {
-    background-color: #f2f2f2;
+    background-color: white;
+  }
+  button {
+    background-color: #65ccb8;
   }
 `;
 
@@ -128,10 +129,7 @@ const Contact = () => {
                   value={message}
                 />
               </div>
-              <button
-                className="btn btn-success mt-2"
-                onClick={handleFormSubmit}
-              >
+              <button className="btn mt-2" onClick={handleFormSubmit}>
                 Submit
               </button>
             </form>
