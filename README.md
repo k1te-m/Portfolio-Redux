@@ -8,17 +8,9 @@ A MERN stack application, utilizing React-Redux, to act as a portfolio for my pr
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
-
-## Installation
-
-_Steps required to install package:_
-
-N/A
 
 ## Usage
 
@@ -31,16 +23,6 @@ _Examples of project use:_
 _If you are interested in contributing to this project, please follow the below instructions:_
 
 Pull requests not welcome at this time.
-
-## Tests
-
-_Application tests and instructions for them:_
-
-N/A
-
-## License
-
-None
 
 ## Questions
 
