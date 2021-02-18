@@ -15,6 +15,7 @@ import WorkHistory from "./resume/workhistory/WorkHistory";
 import Footer from "./footer/Footer";
 import About from "./about/About";
 import Hobbies from "./about/Hobbies";
+import TimeLine from "./timeline/Timeline";
 
 const AboutContainer = styled.div`
   hr {
@@ -24,6 +25,8 @@ const AboutContainer = styled.div`
     height: 80vh;
   }
 `;
+
+const ExperienceHeaderContainer = styled.div``;
 
 const ProjectContainer = styled.div``;
 
@@ -52,6 +55,10 @@ const Landing = () => {
         </AboutContainer>
         <Hobbies />
         <Portfolio />
+        <ExperienceHeaderContainer className="container">
+          <h3>Experience</h3>
+        </ExperienceHeaderContainer>
+        <TimeLine />
       </>
     );
   }
