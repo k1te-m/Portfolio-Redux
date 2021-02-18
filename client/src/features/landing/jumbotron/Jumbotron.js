@@ -41,7 +41,7 @@ const Jumbotron = () => {
   return (
     <StyledHeader className="container-fluid">
       <div className="container-fluid p-0 header">
-        <div className="row">
+        <div className="row mt-1">
           <div className="col-6">
             <h1>
               <Link to="/" className="navBrand my-auto">
