@@ -17,14 +17,26 @@ const FooterWrapper = styled.div`
   height: 128px;
 
   i {
-    font-size: 4rem;
+    font-size: 2rem;
     color: white;
+    @media (min-width: 768px) {
+      font-size: 2.75rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 3rem;
+    }
   }
   i:hover {
     animation: ${pulse} 1s infinite;
   }
   a {
-    width: 150px;
+    width: 50px;
+    @media (min-width: 768px) {
+      width: 100px;
+    }
+    @media (min-width: 992px) {
+      width: 150px;
+    }
   }
 `;
 
