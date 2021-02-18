@@ -27,7 +27,7 @@ const repoSeed = [
     name: "explorer",
     github: "k1te-m",
     deployedLink: "https://gentle-atoll-92825.herokuapp.com/",
-    imageURL: "../images/explorer.PNG",
+    imageURL: "../images/explorer.png",
     description:
       "MERN stack web game that is designed to take the user on an educational journey while interacting with NASA information to gain explorative knowledge. Gain credits as rewards for answering correct quiz questions while transversing the universe. Purchase and upgrade ships throught your journey.",
     languages: ["ReactJS", "MongoDB", "Express", "NodeJS", "Bootstrap"],
@@ -36,7 +36,7 @@ const repoSeed = [
     name: "EcommerceApp",
     github: "k1te-m",
     deployedLink: "https://fierce-earth-38835.herokuapp.com/",
-    imageURL: "../images/limitelec.PNG",
+    imageURL: "../images/limit.png",
     description:
       "A mock ecommerce electronics site. Product data is stored in a MySQL database, and the users can browse in a variety of ways. Users can optionally create an account, and log in and log out. While logged in, they can view their member information.",
     languages: [
@@ -52,7 +52,7 @@ const repoSeed = [
     name: "Google-Books-React-Search",
     github: "k1te-m",
     deployedLink: "https://warm-journey-23534.herokuapp.com/",
-    imageURL: "../images/googlebooks.png",
+    imageURL: "../images/books.png",
     description:
       "React application utilizing NodeJS, Express, and MongoDB that allows users to query and display books from the Google Books API. Users are given various information about each book and are able to save books that they like or want to read for future reference.",
     languages: ["ReactJS", "MongoDB", "NodeJS", "Express", "Bootstrap"],
