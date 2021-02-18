@@ -52,19 +52,29 @@ const Jumbotron = () => {
           <div className="col-6">
             <ul>
               <li>
-                <HashLink className="nav-link" to="/">
-                  Portfolio
+                <HashLink className="nav-link" to="/#projects">
+                  PROJECTS
                 </HashLink>
               </li>
               <li>
-                <HashLink className="nav-link" to="/">
-                  Portfolio
+                <HashLink className="nav-link" to="/#experience">
+                  EXPERIENCE
                 </HashLink>
               </li>
               <li>
-                <HashLink className="nav-link" to="/">
-                  Portfolio
+                <HashLink className="nav-link" to="/#contact">
+                  CONTACT
                 </HashLink>
+              </li>
+              <li>
+                <a
+                  className="nav-link"
+                  href="https://drive.google.com/file/d/1XbOSu9JYqNGkLfgajWcSbFbJs2Bp1cXr/view"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  RESUME
+                </a>
               </li>
             </ul>
           </div>
