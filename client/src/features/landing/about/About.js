@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ImageStyled = styled.img`
-  width: 100%
-  display: block;
+  width: 425px;
   margin: auto;
   object-fit: fill;
   @media (min-width: 768px) {
