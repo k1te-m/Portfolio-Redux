@@ -48,6 +48,13 @@ const ContactSection = styled.div`
   }
 `;
 
+const StyledButton = styled.button`
+  background-color: #65ccb8;
+  border-radius: 5px;
+  color: white;
+  width: 76px;
+`;
+
 const Contact = () => {
   const modal = useSelector(selectModal);
   const dispatch = useDispatch();
@@ -140,9 +147,9 @@ const Contact = () => {
                   value={message}
                 />
               </div>
-              <button className="btn mt-2" onClick={handleFormSubmit}>
+              <StyledButton className="btn mt-2" onClick={handleFormSubmit}>
                 Submit
-              </button>
+              </StyledButton>
             </form>
           </div>
         </div>
