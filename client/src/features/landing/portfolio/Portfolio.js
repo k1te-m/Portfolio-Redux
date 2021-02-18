@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectPortfolio } from "../portfolio/portfolioSlice";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const PortfolioContainer = styled.div`
   text-align: center;
@@ -49,6 +49,22 @@ const StyledListItem = styled.li`
   }
 `;
 
+const pulse = keyframes`
+  from { transfrom: scale(1); }
+  50% { transform: scale(.85); }
+  to { transform: scale(1);}
+`;
+
+const StyledButton = styled.button`
+  background-color: #65ccb8;
+  border-radius: 5px;
+  color: white;
+  :hover {
+    animation: ${pulse} 1s infinite;
+  }
+  border: 1px solid black;
+`;
+
 const Portfolio = () => {
   const portfolio = useSelector(selectPortfolio);
 
@@ -85,7 +101,7 @@ const Portfolio = () => {
             <div className="row mt-1 w-50 m-auto">
               <div className="col p-0">
                 <a href={repo.deployedLink} target="_blank" rel="noreferrer">
-                  <span>Visit</span>
+                  <StyledButton className="btn">Visit</StyledButton>
                 </a>
               </div>
               <div className="col p-0">
@@ -94,7 +110,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span>GitHub</span>
+                  <StyledButton className="btn">GitHub</StyledButton>
                 </a>
               </div>
             </div>
