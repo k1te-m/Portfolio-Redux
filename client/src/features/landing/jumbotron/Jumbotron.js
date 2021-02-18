@@ -68,7 +68,7 @@ const Jumbotron = () => {
               </li>
               <li>
                 <a
-                  className="nav-link"
+                  className="nav-link mb-1"
                   href="https://drive.google.com/file/d/1XbOSu9JYqNGkLfgajWcSbFbJs2Bp1cXr/view"
                   target="_blank"
                   rel="noreferrer"
