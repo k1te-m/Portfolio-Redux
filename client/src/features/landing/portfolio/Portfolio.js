@@ -35,17 +35,12 @@ const StyledListItem = styled.li`
   padding: auto;
   margin: auto;
   padding-left: 0px;
-  color: #3b945e;
+  color: #65ccb8;
   @media (min-width: 576px) {
     font-size: 13px;
   }
   @media (min-width: 768px) {
     font-size: 16px;
-  }
-  @media (min-width: 992px) {
-  }
-  @media (min-width: 1200px) {
-    color: #182628;
   }
 `;
 
