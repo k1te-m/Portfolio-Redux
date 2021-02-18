@@ -10,7 +10,7 @@ const StyledHeader = styled.div`
     text-decoration: none;
     margin: auto;
     padding: auto;
-    color: #f2f2f2;
+    color: white;
   }
   .nav-link {
     padding: 0.25rem;

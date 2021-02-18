@@ -5,7 +5,7 @@ const HobbiesStyled = styled.div`
   text-align: center;
   height: auto;
   background-color: #65ccb8;
-  color: #f2f2f2;
+  color: white;
   i {
     font-size: 2rem;
   }
@@ -26,7 +26,7 @@ const Hobbies = () => {
   return (
     <HobbiesStyled className="container-fluid">
       <div className="row pb-2">
-        <h3>In my spare time, you can find me:</h3>
+        <h3>In my spare time, you can find me...</h3>
       </div>
       <div className="row">
         <ul>
@@ -43,7 +43,7 @@ const Hobbies = () => {
               <i className="fas fa-book-reader" />
             </div>
             <div className="row">
-              <span>With my nose in a book!</span>
+              <span>Reading a book.</span>
             </div>
           </li>
           <li>
@@ -51,7 +51,7 @@ const Hobbies = () => {
               <i className="fas fa-baseball-ball" />
             </div>
             <div className="row">
-              <span>Reading about or watching sports. Go-Go White Sox!!</span>
+              <span>Reading about or watching sports.</span>
             </div>
           </li>
         </ul>
