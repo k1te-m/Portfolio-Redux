@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Modal from "../../modal/Modal";
 import { selectModal, TOGGLE_MODAL } from "../../modal/modalSlice";
 import { useSelector, useDispatch } from "react-redux";
+import { SET_ALERT } from "../../alert/alertSlice";
 
 const ImgContainer = styled.div`
   display: flex;
@@ -68,9 +69,19 @@ const Contact = () => {
     event.preventDefault();
     const mailformat = /.+@.+\..+/;
     if (name === "" || email === "" || message === "") {
-      alert("Please enter all available fields.");
+      dispatch(
+        SET_ALERT({
+          message: "Please enter all available fields.",
+          type: "danger",
+        })
+      );
     } else if (!email.match(mailformat)) {
-      alert("Please enter a valid email address.");
+      dispatch(
+        SET_ALERT({
+          message: "Please enter a valid email address.",
+          type: "danger",
+        })
+      );
     } else {
       API.sendMessage({
         name: messageObject.name,
