@@ -24,7 +24,7 @@ N/A
 
 _Examples of project use:_
 
-Will Update
+![DemoImage](demoImg2.png)
 
 ## Contributing
 
