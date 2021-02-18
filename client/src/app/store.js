@@ -4,6 +4,7 @@ import portfolioReducer from "../features/landing/portfolio/portfolioSlice";
 import modalReducer from "../features/modal/modalSlice";
 import navReducer from "../features/landing/nav/navSlice";
 import timelineModalReducer from "../features/landing/timeline/timelineModal/timelineModalSlice";
+import alertReducer from "../features/alert/alertSlice";
 
 export default configureStore({
   reducer: {
@@ -12,5 +13,6 @@ export default configureStore({
     modal: modalReducer,
     nav: navReducer,
     timelineModal: timelineModalReducer,
+    alert: alertReducer,
   },
 });
