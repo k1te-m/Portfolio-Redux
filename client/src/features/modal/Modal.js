@@ -9,22 +9,24 @@ const Overlay = styled(motion.div)`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 `;
 
 const ModalContainer = styled(motion.div)`
   width: 325px;
   height: auto;
-  background-color: #f2f2f2;
+  background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 12px;
-  border: 1px solid #3b945e;
+  border: 1px solid #65ccb8;
   @media screen and (min-width: 576px) {
     width: 450px;
   }
   @media screen and (min-width: 768px) {
+    width: 550px;
   }
   @media screen and (min-width: 992px) {
   }

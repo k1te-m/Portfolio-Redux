@@ -37,12 +37,12 @@ const About = () => {
           <div className="row">
             <p>
               Prior to being a developer, I worked as a financial analyst, and
-              later as a manager providing daily valuations and various
-              reporting services for a Fortune 500 client with nearly $24B in
-              market capitalization. Beginning in 2019, my team was tasked to
-              work hand in hand with a small group of developers to create tools
-              to manage workflow and automate processes. I was captivated by the
-              development process and eager to learn more.
+              later as a manager, providing daily pension fund valuations and
+              various reporting services for a Fortune 500 client with nearly
+              $24B in market capitalization. Beginning in 2019, my team was
+              tasked to work hand in hand with a small group of developers to
+              create tools to manage workflow and automate processes. I was
+              captivated by the development process and eager to learn more.
             </p>
             <p>
               It was during this time that I began taking some self-paced
