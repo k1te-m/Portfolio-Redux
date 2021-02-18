@@ -34,7 +34,7 @@ const ContactSection = styled.div`
   .form-group {
     text-align: left;
   }
-  h1 {
+  h3 {
     text-align: left;
   }
   input {
@@ -108,7 +108,7 @@ const Contact = () => {
       <ContactSection className="container">
         <div className="row">
           <div className="col">
-            <h1>Contact</h1>
+            <h3>Contact</h3>
             <form>
               <div className="form-group">
                 <label htmlFor={name}>Name</label>

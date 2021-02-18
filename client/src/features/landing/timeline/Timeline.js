@@ -63,8 +63,9 @@ const ModalContainer = styled.div`
     list-style: none;
   }
   li {
+    text-align: left;
     margin: auto;
-    width: 60%;
+    width: 50%;
   }
 `;
 

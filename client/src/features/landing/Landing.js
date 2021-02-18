@@ -57,7 +57,7 @@ const Landing = () => {
         <div id="projects"></div>
         <Portfolio />
         <ExperienceHeaderContainer className="container">
-          <h3 id="experience">Experience</h3>
+          <h3 id="experience">EXPERIENCE</h3>
         </ExperienceHeaderContainer>
         <TimeLine />
         <div id="contact"></div>

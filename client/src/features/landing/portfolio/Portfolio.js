@@ -71,7 +71,7 @@ const Portfolio = () => {
   return (
     <PortfolioContainer className="container">
       <div className="row mb-5">
-        <h3>Projects</h3>
+        <h3>PROJECTS</h3>
       </div>
       {portfolio.map((repo) => (
         <div className="row mb-3">
