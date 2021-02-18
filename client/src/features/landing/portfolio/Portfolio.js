@@ -9,8 +9,10 @@ const PortfolioContainer = styled.div`
     text-align: left;
   }
   img {
-    width: 205px;
-    height: 432px;
+    width: 350px;
+    @media (min-width: 992px) {
+      width: 600px;
+    }
   }
 `;
 
