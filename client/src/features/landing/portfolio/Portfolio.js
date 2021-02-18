@@ -59,10 +59,10 @@ const StyledButton = styled.button`
   background-color: #65ccb8;
   border-radius: 5px;
   color: white;
+  width: 76px;
   :hover {
     animation: ${pulse} 1s infinite;
   }
-  border: 1px solid black;
 `;
 
 const Portfolio = () => {
