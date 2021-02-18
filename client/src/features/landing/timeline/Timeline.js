@@ -13,8 +13,11 @@ const TimeLineWrapper = styled.div`
 
 const TimelineStyle = styled.div`
   width: 100%;
+  @media (min-width: 768px) {
+    width: 60%;
+  }
   @media (min-width: 992px) {
-    width: 50%;
+    width: 35%;
   }
   text-align: center;
   i {
