@@ -115,7 +115,7 @@ const Contact = () => {
       <ContactSection className="container">
         <div className="row">
           <div className="col">
-            <h3>Contact</h3>
+            <h3>CONTACT</h3>
             <form>
               <div className="form-group">
                 <label htmlFor={name}>Name</label>

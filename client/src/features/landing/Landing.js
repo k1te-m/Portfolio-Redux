@@ -9,9 +9,6 @@ import {
   loadRepos,
 } from "../landing/portfolio/portfolioSlice";
 import Contact from "./contact/Contact";
-import Education from "./resume/education/Education";
-import Skills from "./resume/skills/Skills";
-import WorkHistory from "./resume/workhistory/WorkHistory";
 import Footer from "./footer/Footer";
 import About from "./about/About";
 import Hobbies from "./about/Hobbies";
