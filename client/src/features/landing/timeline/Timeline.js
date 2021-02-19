@@ -232,14 +232,14 @@ const TimeLine = () => {
           </div>
           <div className="row">
             <ul className="fa-ul">
-              <li>
+              <li key="1">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
                 A 12-week intensive program focused on gaining technical
                 programming skills in full-stack web development
               </li>
-              <li>
+              <li key="2">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
@@ -268,14 +268,14 @@ const TimeLine = () => {
           </div>
           <div className="row">
             <ul className="fa-ul">
-              <li>
+              <li key="3">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
                 Direct 4-person accounting team’s daily operations for Fortune
                 500 client ($23.9B in market capitalization)
               </li>
-              <li>
+              <li key="4">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
@@ -304,14 +304,14 @@ const TimeLine = () => {
           </div>
           <div className="row">
             <ul className="fa-ul">
-              <li>
+              <li key="5">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
                 Establish that core procedures and client-specific procedures
                 are followed on a daily and monthly basis
               </li>
-              <li>
+              <li key="6">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
@@ -340,7 +340,7 @@ const TimeLine = () => {
           </div>
           <div className="row">
             <ul className="fa-ul">
-              <li>
+              <li key="7">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
@@ -348,7 +348,7 @@ const TimeLine = () => {
                 exceptions, and daily processes to provide NAV reports prior to
                 client deadlines
               </li>
-              <li>
+              <li key="8">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
@@ -377,19 +377,19 @@ const TimeLine = () => {
           </div>
           <div className="row">
             <ul className="fa-ul">
-              <li>
+              <li key="9">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
                 Compute Net Asset Value (NAV) for DC/DB plans
               </li>
-              <li>
+              <li key="10">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
                 Audit, research and resolve exceptions on assigned accounts
               </li>
-              <li>
+              <li key="11">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
@@ -417,13 +417,13 @@ const TimeLine = () => {
           </div>
           <div className="row">
             <ul className="fa-ul">
-              <li>
+              <li key="12">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
                 Driehaus College of Business
               </li>
-              <li>
+              <li key="13">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>

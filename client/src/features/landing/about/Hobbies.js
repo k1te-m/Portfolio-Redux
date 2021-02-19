@@ -30,7 +30,7 @@ const Hobbies = () => {
       </div>
       <div className="row">
         <ul>
-          <li>
+          <li key="game">
             <div className="row">
               <i className="fas fa-crosshairs" />
             </div>
@@ -38,7 +38,7 @@ const Hobbies = () => {
               <span>Playing a competetive video game.</span>
             </div>
           </li>
-          <li>
+          <li key="read">
             <div className="row">
               <i className="fas fa-book-reader" />
             </div>
@@ -46,7 +46,7 @@ const Hobbies = () => {
               <span>Reading a book.</span>
             </div>
           </li>
-          <li>
+          <li key="sports">
             <div className="row">
               <i className="fas fa-baseball-ball" />
             </div>

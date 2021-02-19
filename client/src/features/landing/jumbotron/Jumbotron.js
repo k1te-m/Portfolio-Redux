@@ -51,22 +51,22 @@ const Jumbotron = () => {
           </div>
           <div className="col-6">
             <ul>
-              <li>
+              <li key="projects">
                 <HashLink className="nav-link" to="/#projects">
                   PROJECTS
                 </HashLink>
               </li>
-              <li>
+              <li key="experience">
                 <HashLink className="nav-link" to="/#experience">
                   EXPERIENCE
                 </HashLink>
               </li>
-              <li>
+              <li key="contact">
                 <HashLink className="nav-link" to="/#contact">
                   CONTACT
                 </HashLink>
               </li>
-              <li>
+              <li key="resume">
                 <a
                   className="nav-link mb-1"
                   href="https://drive.google.com/file/d/1XbOSu9JYqNGkLfgajWcSbFbJs2Bp1cXr/view"

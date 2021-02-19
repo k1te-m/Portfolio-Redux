@@ -69,7 +69,7 @@ const Portfolio = () => {
         <h3>PROJECTS</h3>
       </div>
       {portfolio.map((repo) => (
-        <div className="row mb-3">
+        <div className="row mb-3" key={repo.name}>
           <div className="col-md-6 my-auto">
             <div className="row">
               <h5>{repo.name}</h5>
