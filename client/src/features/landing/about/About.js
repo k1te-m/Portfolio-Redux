@@ -67,8 +67,8 @@ const About = () => {
           </div>
           <div className="row">
             <span>
-              JavaScript • ReactJS • Redux • ReduxToolKit • HTML5 • CSS3 •
-              TypeScript • jQuery • Bootstrap
+              JavaScript • TypeScript • jQuery • ReactJS • Redux • ReduxToolKit
+              • HTML5 • CSS3 • Sass • Bootstrap
             </span>
           </div>
 
