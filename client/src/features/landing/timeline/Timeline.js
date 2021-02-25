@@ -59,7 +59,9 @@ const CardSubtitle = styled.h6``;
 
 const ModalContainer = styled.div`
   ul {
+    width: 100%;
     margin: auto;
+    padding-right: 0px;
     list-style: none;
   }
   li {
@@ -80,6 +82,7 @@ const TimeLine = () => {
     <>
       <TimeLineWrapper>
         <TimelineStyle>
+          <h6>Tap for more info</h6>
           <Chrono
             items={items}
             mode="VERTICAL_ALTERNATING"

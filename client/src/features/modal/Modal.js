@@ -13,7 +13,7 @@ const Overlay = styled(motion.div)`
 `;
 
 const ModalContainer = styled(motion.div)`
-  width: 325px;
+  width: 300px;
   height: auto;
   background-color: white;
   position: absolute;
@@ -26,7 +26,6 @@ const ModalContainer = styled(motion.div)`
     width: 450px;
   }
   @media screen and (min-width: 768px) {
-    width: 550px;
   }
   @media screen and (min-width: 992px) {
   }
