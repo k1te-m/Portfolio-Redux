@@ -39,8 +39,8 @@ const TimelineStyle = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   margin: auto;
 `;
 
@@ -53,11 +53,38 @@ const CardContainer = styled.div`
   text-align: center;
 `;
 
-const CardTitle = styled.h5``;
+const CardTitle = styled.h5`
+  font-size: 0.8rem;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+`;
 
-const CardSubtitle = styled.h6``;
+const CardSubtitle = styled.h6`
+  font-size: 0.7rem;
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
+  }
+`;
 
 const ModalContainer = styled.div`
+  text-align: center;
+  h3 {
+    font-size: 1rem;
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+    @media (min-width: 992px) {
+    }
+  }
+  h5 {
+    font-size: 0.8rem;
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+    }
+    @media (min-width: 992px) {
+    }
+  }
   ul {
     width: 100%;
     margin: auto;
@@ -68,6 +95,13 @@ const ModalContainer = styled.div`
     text-align: left;
     margin: auto;
     width: 50%;
+    font-size: 0.7rem;
+    @media (min-width: 768px) {
+      font-size: 0.75rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -223,7 +257,7 @@ const TimeLine = () => {
         </TimelineStyle>
       </TimeLineWrapper>
       <Modal isOpen={northwestern} handleClose={() => dispatch(TOGGLE_NW())}>
-        <ModalContainer className="container" style={{ textAlign: "center" }}>
+        <ModalContainer className="container">
           <div className="row">
             <h3>Certificate</h3>
           </div>
@@ -275,15 +309,31 @@ const TimeLine = () => {
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Direct 4-person accounting team’s daily operations for Fortune
-                500 client ($23.9B in market capitalization)
+                Directed 4-person accounting team’s daily operations for Fortune
+                500 client ($23.9B in market capitalization).
               </li>
               <li key="4">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Organize the work of the team, assign tasks, monitor all
-                activities, and ensure timely and accurate completion
+                Conducted performance management and career development
+                processes, staffing and disciplinary actions.
+              </li>
+              <li key="14">
+                <span className="fa-li">
+                  <i className="far fa-check-square" />
+                </span>
+                Monitored monthly reporting for onward transmission to the
+                Trustees and ensured accuracy of reports prepared for regulatory
+                agencies.
+              </li>
+              <li key="15">
+                <span className="fa-li">
+                  <i className="far fa-check-square" />
+                </span>
+                Organized the work of the team, assigned tasks, set short-term
+                priorities, monitored all activities and ensured timely and
+                accurate completion of the work.
               </li>
             </ul>
           </div>
@@ -311,15 +361,30 @@ const TimeLine = () => {
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Establish that core procedures and client-specific procedures
-                are followed on a daily and monthly basis
+                Served as a resource to clients, partners, and team members for
+                clarity, understanding, and information regarding the
+                relationships handled by the team.
               </li>
               <li key="6">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Serves as a key subject matter expert to clients, colleagues,
-                and team members for clarity, understanding and information
+                Carried out complex activities with significant financial,
+                client, and/or internal business impact.
+              </li>
+              <li key="16">
+                <span className="fa-li">
+                  <i className="far fa-check-square" />
+                </span>
+                Developed process improvements or created projects that
+                benefited division/department initiatives.
+              </li>
+              <li key="17">
+                <span className="fa-li">
+                  <i className="far fa-check-square" />
+                </span>
+                Managed daily operational activities and supervised day-to-day
+                work of junior level employees
               </li>
             </ul>
           </div>
@@ -343,20 +408,27 @@ const TimeLine = () => {
           </div>
           <div className="row">
             <ul className="fa-ul">
+              <li key="18">
+                <span className="fa-li">
+                  <i className="far fa-check-square" />
+                </span>
+                Lead analyst of team that worked on large-scale, complex and
+                sensitive client relationship.
+              </li>
               <li key="7">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Assist partners with reconciliation of funds, resolution of
+                Assisted partners with reconciliation of funds, resolution of
                 exceptions, and daily processes to provide NAV reports prior to
-                client deadlines
+                client deadlines.
               </li>
               <li key="8">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Lead analyst of team working on large-scale, complex and
-                sensitive client relationship
+                Trained partners for month-end reports and annual/5500
+                reporting.
               </li>
             </ul>
           </div>
@@ -384,19 +456,31 @@ const TimeLine = () => {
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Compute Net Asset Value (NAV) for DC/DB plans
+                Determined Net Asset Value (NAV) for DC & DB plans on a daily
+                basis.
               </li>
               <li key="10">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Audit, research and resolve exceptions on assigned accounts
+                Evaluated and reconciled funds including mutual, benchmark,
+                commingled and collective for production of client month-end
+                reports and annual 5500 reporting.
               </li>
               <li key="11">
                 <span className="fa-li">
                   <i className="far fa-check-square" />
                 </span>
-                Analyze the impact of transactions, income positions, accruals
+                Audited and resolved exceptions on assigned accounts according
+                to procedures and within scheduled time frames on a daily basis.
+              </li>
+              <li key="19">
+                <span className="fa-li">
+                  <i className="far fa-check-square" />
+                </span>
+                Member of the Corporate Action Team, processed corporate actions
+                for accounts across the division and trained new analysts on
+                procedures.
               </li>
             </ul>
           </div>
