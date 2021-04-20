@@ -6,6 +6,23 @@ mongoose.connect(process.env.MONGODB_URI || config.get("MONGODB_URI"));
 
 const repoSeed = [
   {
+    name: "Ticker-Tracker",
+    github: "k1te-m",
+    deployedLink: "https://vantage-news.herokuapp.com/",
+    imageURL: "../images/vantage.png",
+    description:
+      "A MERN (Redux) stack application using IEX Cloud to retrieve and display current ticker information, historical information, and news. Registered users can add or remove tickers from their watchlist to keep up to date on the latest market movements.",
+    languages: [
+      "ReactJS",
+      "MongoDB",
+      "NodeJS",
+      "Express",
+      "Bootstrap",
+      "Redux",
+      "ReactChartJS",
+    ],
+  },
+  {
     name: "Chat-Application",
     github: "k1te-m",
     deployedLink: "https://calm-springs-46357.herokuapp.com/",
@@ -15,7 +32,6 @@ const repoSeed = [
     languages: [
       "ReactJS",
       "Redux",
-      "ReduxToolkit",
       "MongoDB",
       "Socket.io",
       "Express",
@@ -47,15 +63,6 @@ const repoSeed = [
       "NodeJS",
       "Bootstrap",
     ],
-  },
-  {
-    name: "Google-Books-React-Search",
-    github: "k1te-m",
-    deployedLink: "https://warm-journey-23534.herokuapp.com/",
-    imageURL: "../images/books.png",
-    description:
-      "React application utilizing NodeJS, Express, and MongoDB that allows users to query and display books from the Google Books API. Users are given various information about each book and are able to save books that they like or want to read for future reference.",
-    languages: ["ReactJS", "MongoDB", "NodeJS", "Express", "Bootstrap"],
   },
 ];
 
